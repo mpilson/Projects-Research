@@ -1,7 +1,7 @@
 **Projects & Research Portfolio**
 Hi, I’m Michael (Phin) Pilson, and welcome to my Projects & Research Portfolio! This repository reflects my passion for data science, math, and computer science.
 Through these projects, I’ve explored everything from coding machine learning algorithms from scratch to graduate-level graph theory research.
-Below, you'll find descriptions of each folder and its contents. Enjoy! (I will try to keep this up to date as best I can, Last Updated: 9/10/2024) 
+Below, you'll find descriptions of each folder and its contents. Enjoy! (I will try to keep this up to date as best I can, Last Updated: 10/30/2024) 
 
 [**112**](https://github.com/mpilson/Projects-Research/tree/main/112)
 This folder captures the work I did in my intro cs class (15-112)
@@ -65,6 +65,24 @@ Used cross validation and error analysis to compare performance
 - Sklearn: used pipeline, gridsearch, cross validation, and built in performance metrics to streamline training, testing, and model evaluation
 - Sklearn pipeline: scale data, streamline training
 - Sklearn gridsearch: iterate through possible hyperparameter values, find best combination
+
+PCA
+Implemented principal component analysis
+- Numpy: for quick and seemless linear algebra operationsused and broadcasting/vectorization
+- OOP: to provide seamless storage and access to model attributes and specific methods
+
+MLP
+Implemented standard fully connected multilayered perceptron
+- Dataset: used MNIST image classification dataset for testing
+- OOP: Used oop extensively for network architecture (layers) and methods (backprop, forward, ...)
+- Numpy: for broadcasting, streamlined linear alegbra operations, and vectorization
+- Initialization/Activation/Cost: InitiatlizationHE and Xavier methods,RELU, Sigmoid, 
+- PyTorch: Used PyTorch for replication/comparison and build familarity with framework
+
+kmeans/EMA
+Implemented kmeans and gaussian clustering with EMA
+- Numpy: for broadcasting, streamlined linear alegbra operations, and vectorization
+- OOP: to provide seamless storage and access to model attributes and specific methods
 
 [**SUAMI**](https://github.com/mpilson/Projects-Research/tree/main/SUAMI)
 This folder encapsulates some of the work I did over the summer through CMU's math research program Summer Undergraduate Applied Mathematics Institute (SUAMI)

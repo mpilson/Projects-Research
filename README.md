@@ -1,37 +1,31 @@
 **Projects & Research Portfolio**
 Hi, I’m Michael (Phin) Pilson, and welcome to my Projects & Research Portfolio! This repository reflects my passion for data science, math, and computer science.
 Through these projects, I’ve explored everything from coding machine learning algorithms from scratch to graduate-level graph theory research.
-Below, you'll find descriptions of each folder and its contents. Enjoy! (I will try to keep this up to date as best I can, Last Updated: 10/30/2024) 
+Below, you'll find descriptions of each folder and its contents. Enjoy! (I will try to keep this up to date as best I can, Last Updated: 12/1/2024) 
 
-[**112**](https://github.com/mpilson/Projects-Research/tree/main/112)
-This folder captures the work I did in my intro cs class (15-112)
+[**Chess**](https://github.com/mpilson/Projects-Research/tree/main/Chess)
+This folder displays my attempt at a chess engine. I am currently working on this so it is definetly far from finished or optimized.
+The project is based off the RL method of AlphaZero.
 
-Mini Metro Simulation
-This project simulates a transportation network, inspired by the game Mini Metro
-- OOP: Object-Oriented Programming for managing vehicles, passengers, and routes.
-- Data Structures: Efficient data structures to handle dynamic edge lists for real-time route planning.
-- Pathfinding: Focus on pathfinding and network optimization algorithms.
+Engine
+- Libraries: PyTorch, Python Chess, Math, and NumPy
+- Improves through self-play, stores board states, scores, and results, trains over batches of games
+- Moves in self-play determined by policy/value function that leverages CNN, Transformer, and Bellman equation
+- CNN: Board scoring (Reward function)
+  - Effectively and efficiently captures positional value
+  - Inputs board converted to tensor, outputs single number as reward
+  - Trained on self-play generated data, maps each state to a combination of material score and discounted result (subject to change)
+- Transformer: Move Prediction (RL state probability distributions)
+  - Inputs sequences of moves, outputs valid probability distribution of legal moves
+  - Trained on sequences of moves mapped to the next move, generated through self-play
+  - Incorporates masking, tokenization, padding, ...
 
-Tetris Clone
-A custom implementation of the classic Tetris game
-- OOP: Object-Oriented Programming for managing game elements like pieces and the grid.
-- 2d grid data structure: Use of 2D grid-based algorithms for piece movement, collision detection, and line clearing.
-- Graphics: A simple graphical interface for rendering the game board and interactions.
-
-[**202**](https://github.com/mpilson/Projects-Research/tree/main/202)
-These two end-to-end data analysis projects use real-world datasets (Titanic and bike-sharing data), (From stats class 36-202)
-
-Titanic EDA
-- Dataset: Titanic survival data
-- Techniques: Data wrangling (dplyr, readr), univariate and bivariate analysis and visualization (ggplot2, bar charts, scatter/box plots),
-classification models (LDA, QDA, logistic regression, decision trees, …), performance analysis (error metrics, misclassification)
-- Insights: Passenger class and gender strongly influenced survival rates.
-  
-Bike Sharing EDA
-- Dataset: Washington D.C. bike-sharing data
-- Techniques: Linear regression, data transformations (log, power), univariate and bivariate analysis and visualization (ggplot2, histograms, bar plots),
-- performance analysis (multicollinearity with VIF, residual using QQ plots)
-- Insights: Temperature positively correlated with bike usage, while weather played a significant role in user behavior.
+Zst_to_pgn
+Script that converts and filters files from zst to pgn format
+- Data: lichess database
+- Libraries: zstandard, chess.pgn
+- Filters data based on elo, termination, game length, ...
+- Outputs a file of games that fit the criteria as a new pgn file
 
 [**ML**](https://github.com/mpilson/Projects-Research/tree/main/ML)
 This folder contains what I am currently working on and current skills I am trying to develop.
@@ -83,6 +77,36 @@ kmeans/EMA
 Implemented kmeans and gaussian clustering with EMA
 - Numpy: for broadcasting, streamlined linear alegbra operations, and vectorization
 - OOP: to provide seamless storage and access to model attributes and specific methods
+
+[**112**](https://github.com/mpilson/Projects-Research/tree/main/112)
+This folder captures the work I did in my intro cs class (15-112)
+
+Mini Metro Simulation
+This project simulates a transportation network, inspired by the game Mini Metro
+- OOP: Object-Oriented Programming for managing vehicles, passengers, and routes.
+- Data Structures: Efficient data structures to handle dynamic edge lists for real-time route planning.
+- Pathfinding: Focus on pathfinding and network optimization algorithms.
+
+Tetris Clone
+A custom implementation of the classic Tetris game
+- OOP: Object-Oriented Programming for managing game elements like pieces and the grid.
+- 2d grid data structure: Use of 2D grid-based algorithms for piece movement, collision detection, and line clearing.
+- Graphics: A simple graphical interface for rendering the game board and interactions.
+
+[**202**](https://github.com/mpilson/Projects-Research/tree/main/202)
+These two end-to-end data analysis projects use real-world datasets (Titanic and bike-sharing data), (From stats class 36-202)
+
+Titanic EDA
+- Dataset: Titanic survival data
+- Techniques: Data wrangling (dplyr, readr), univariate and bivariate analysis and visualization (ggplot2, bar charts, scatter/box plots),
+classification models (LDA, QDA, logistic regression, decision trees, …), performance analysis (error metrics, misclassification)
+- Insights: Passenger class and gender strongly influenced survival rates.
+  
+Bike Sharing EDA
+- Dataset: Washington D.C. bike-sharing data
+- Techniques: Linear regression, data transformations (log, power), univariate and bivariate analysis and visualization (ggplot2, histograms, bar plots),
+- performance analysis (multicollinearity with VIF, residual using QQ plots)
+- Insights: Temperature positively correlated with bike usage, while weather played a significant role in user behavior.
 
 [**SUAMI**](https://github.com/mpilson/Projects-Research/tree/main/SUAMI)
 This folder encapsulates some of the work I did over the summer through CMU's math research program Summer Undergraduate Applied Mathematics Institute (SUAMI)
